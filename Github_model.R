@@ -60,7 +60,6 @@ compile("self.cpp") # can be extended as much as we like
 dyn.load(dynlib("self"))
 
 samp<-match(paste0(dat$catch_weight,"x",dat$type), unique(paste0(dat$catch_weight, "x", dat$type)))
-samp[dat$type%in%c(3,4)]<-0
 samp<-as.integer(as.factor(samp))-1
 
 
